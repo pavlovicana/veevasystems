@@ -1,0 +1,17 @@
+.u-move-text {
+  padding-left: 12rem !important;
+  @include respond(tab-port) {
+    margin-bottom: 10rem;
+  }
+}
+
+.u-margin-bottom-8 {
+  margin-bottom: 2rem !important;
+
+  @include respond(tab-port) {
+    margin-bottom: 1rem;
+  }
+}
+.u-margin-bottom-small {
+  margin-bottom: 3rem !important;
+}

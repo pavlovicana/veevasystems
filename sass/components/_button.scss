@@ -1,0 +1,103 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-weight: 700;
+    font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-primary-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba($color-primary-black, 0.2);
+  }
+
+  &--white {
+    //background-color: $color-primary-white;
+    color: $color-primary-white;
+
+    &::after {
+      //background-color: $color-primary-blue;
+      box-shadow: 0 0.5rem 1rem rgba($color-primary-black, 0.3);
+    }
+  }
+
+  &--green {
+    background-color: rgb(58, 140, 156);
+    color: $color-primary-white;
+    box-shadow: 0 0.5rem 1rem rgba($color-primary-black, 0.3);
+
+    &::after {
+      background-color: rgb(58, 140, 156);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary-white;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid $color-secondary-light-1;
+    padding: 3px 12px;
+    transition: all 0.2s;
+    margin-left: 2rem;
+    font-weight: 700;
+    background-color: $color-primary-blue;
+  }
+
+  &:hover {
+    background-color: $color-secondary-light-1;
+    color: $color-primary-white;
+    box-shadow: 0 1rem 2rem rgba($color-primary-black, 0.2);
+    transform: translateY(-2px);
+    font-weight: 700;
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgba($color-primary-black, 0.15);
+    transform: translateY(0);
+  }
+}

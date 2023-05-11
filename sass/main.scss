@@ -1,0 +1,41 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animation";
+
+@import "pages/home";
+
+@import "components/button";
+
+@import "layout/header";
+@import "layout/navigation";
+
+@import "layout/grid";
+@import "layout/footer";
+@import "components/composition";
+@import "components/customer-box";
+@import "components/wrapper-box";
+@import "components/card";
+@import "components/form";
+
+/*univerzali selektor za elemente clean code*/
+
+.sub-content {
+  background-color: $color-primary-blue;
+  padding: 1.5rem;
+  text-align: center;
+}
+.sub-content--text {
+  font-size: 1.5rem;
+  color: $color-primary-white;
+  @include respond(tab-port) {
+    font-size: 2rem;
+  }
+  @include respond(phone) {
+    font-size: 2.1rem;
+  }
+}

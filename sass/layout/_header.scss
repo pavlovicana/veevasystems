@@ -1,0 +1,37 @@
+.header {
+  height: 70vh; /*visina vidljivog dela browsera*/
+  background-image: /*linear-gradient(
+        to right bottom,
+        hsla(14, 95%, 57%, 0.5),
+        hsl(18, 95%, 52%, 0.3)
+      ),*/ url("../img/Hero-BG-TMFInnovationForum.png");
+  background-size: cover;
+  background-position: top;
+  @include respond(phone) {
+    height: 50vh;
+  }
+
+  // margin-top: 10rem;
+
+  /*koliko god smanjivali vel browsera ostace gornji deo slike vidljiv*/
+  /*clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);*/
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 12%;
+  }
+  &__logo {
+    height: 3rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @include respond(phone) {
+      top: 30%;
+    }
+  }
+}

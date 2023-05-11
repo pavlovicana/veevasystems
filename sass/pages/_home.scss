@@ -1,0 +1,101 @@
+.section-about {
+  background-color: $color-primary-white;
+  padding: 5rem;
+  padding-bottom: 20rem;
+  //margin-top: 3rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  box-shadow: 0rem 1rem 1.5rem 1rem $color-primary-black;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
+}
+.section-customer {
+  background-color: rgb(6, 207, 201);
+  padding: 12rem;
+  position: relative;
+  margin-top: -2rem;
+  top: -2rem;
+  left: 0;
+  z-index: -1;
+
+  @include respond(tab-port) {
+    padding: 13rem 0;
+  }
+  @include respond(phone) {
+    padding: 8rem 0;
+  }
+}
+.section-wrapper {
+  background-color: $color-primary-white;
+  padding: 5rem;
+  margin-top: -6.2rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-bottom: 7rem;
+  box-shadow: 0rem 1rem 1.5rem 1rem $color-primary-black;
+
+  @include respond(tab-port) {
+    padding: 6rem 0;
+  }
+}
+.section-features {
+  //margin-top: 6rem;
+  //padding: 10rem 0 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 2rem 0;
+  }
+}
+.section-contact {
+  padding: 2rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(66, 133, 160),
+    rgb(115, 128, 171)
+  );
+}
+
+.contact {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-primary-white, 0.9) 0%,
+      rgba($color-primary-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/maxresdefault.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-primary-black, 0.2);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-primary-white, 0.9) 0%,
+        rgba($color-primary-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/maxresdefault.jpg);
+    background-size: cover;
+  }
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-primary-white, 0.9) 0%,
+        rgba($color-primary-white, 0.9) 100%
+      ),
+      url(../img/maxresdefault.jpg);
+  }
+  &__form {
+    width: 50%;
+    padding: 5rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
