@@ -42,8 +42,8 @@ Update JavaScript (script.js) for interactive features.
 Use Sass (styles.scss) for styling modifications.
 
 
-**Dependencies
-**
+**Dependencies**
+
 HTML5, CSS3
 
 BEM methodology for structured HTML5 & CSS3
