@@ -24,13 +24,7 @@ Sass preprocessor for efficient styling management
 
 Clone the repository:
 
-git clone https://github.com/your-username/veeva-website-template.git
-
-Navigate to the project directory:
-
-cd veeva-website-template
-
-Open index.html in your browser or use a local server to preview.
+git clone https://pavlovicana.github.io/veevasystems/
 
 **Usage**
 
@@ -44,15 +38,15 @@ Use Sass (styles.scss) for styling modifications.
 
 **Dependencies
 **
-HTML5, CSS3, and JavaScript (Vanilla JS)
+HTML5, CSS3
 
-BEM methodology for structured HTML & CSS
+BEM methodology for structured HTML5 & CSS3
 
 Sass preprocessor
 
-Bootstrap (if included for styling)
+Bootstrap
 
-FontAwesome (for icons, if applicable)
+FontAwesome (for icons)
 
 Contributing
 
